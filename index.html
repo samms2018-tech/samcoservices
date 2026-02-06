@@ -2,203 +2,167 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Samco Property Services | House Sitting Vancouver</title>
 
   <!-- SEO -->
-  <title>Samco Property Services Vancouver | Condo Maintenance & Landlord Unit Turnover</title>
-  <meta name="description" content="Reliable, affordable property services in Vancouver for condos and landlords: condo maintenance, rental unit turnover, move-in/move-out inspections, cleaning coordination, and vendor scheduling. Servicing Metro Vancouver." />
-  <meta name="robots" content="index,follow" />
-  <link rel="canonical" href="https://www.samcoservices.co/" />
+  <meta name="description" content="Trusted house sitting and property check-in services in Vancouver. 20+ years of real property care experience. Peace of mind while you're away."/>
+  <meta name="keywords" content="house sitting Vancouver, home check service Vancouver, vacant home check, property check Vancouver"/>
+  <meta name="author" content="Samco Property Services"/>
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Samco Property Services Vancouver" />
-  <meta property="og:description" content="Condo maintenance, landlord unit turnover, inspections, and vendor coordination across Metro Vancouver." />
-  <meta property="og:url" content="https://www.samcoservices.co/" />
-  <meta property="og:type" content="website" />
-
-  <!-- Local SEO Schema -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"LocalBusiness",
-    "name":"Samco Property Services",
-    "url":"https://www.samcoservices.co/",
-    "email":"info@samcoservices.co",
-    "areaServed":"Metro Vancouver, BC",
-    "description":"Reliable, affordable condo and landlord property services including maintenance, unit turnover, inspections, cleaning coordination, and vendor scheduling."
-  }
-  </script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
   <style>
-    :root{
-      --brand:#0b3d91;
-      --brand2:#0a2f6f;
-      --accent:#00a8e8;
-      --bg:#f4f6f8;
-      --text:#1f2328;
-      --muted:#5b6572;
-      --card:#ffffff;
-      --shadow:0 10px 28px rgba(0,0,0,.10);
-      --shadow2:0 6px 18px rgba(0,0,0,.08);
-      --radius:16px;
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      color: #0F2A44;
+      background: #ffffff;
+      line-height: 1.6;
     }
 
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Arial, sans-serif;background:var(--bg);color:var(--text);line-height:1.55}
-    a{color:inherit;text-decoration:none}
-    .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
-
-    /* Top bar */
-    .topbar{background:var(--brand2);color:#d7e5ff;font-size:14px;padding:10px 0}
-    .topbar strong{color:#fff}
-
-    /* Hero */
-    header{
-      background:linear-gradient(180deg, rgba(11,61,145,.96), rgba(11,61,145,.82));
-      color:#fff;
-      padding:70px 0 60px;
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
     }
 
-    .badge{
-      display:inline-block;
-      background:rgba(255,255,255,.15);
-      border:1px solid rgba(255,255,255,.30);
-      padding:8px 12px;
-      border-radius:999px;
-      font-size:13px;
-      margin-bottom:14px;
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 15px;
     }
 
-    h1{margin:0 0 10px;font-size:44px;line-height:1.08}
-    .sub{margin:0 0 20px;font-size:18px;color:#e8f0ff;max-width:760px}
+    h1 { font-size: 42px; }
+    h2 { font-size: 28px; }
+    h3 { font-size: 22px; }
 
-    .btn{display:inline-block;padding:14px 20px;border-radius:12px;font-weight:900}
-    .btnPrimary{background:var(--accent);color:#fff}
-    .btnGhost{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.35);color:#fff;margin-left:10px}
+    p { margin-bottom: 15px; }
 
-    /* Sections */
-    section{padding:60px 0}
-    .sectionTitle{text-align:center;color:var(--brand);margin:0 0 12px;font-size:30px}
-    .sectionSub{text-align:center;color:var(--muted);max-width:860px;margin:0 auto 30px}
-
-    /* Cards */
-    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
-    .card{grid-column:span 3;background:#fff;border-radius:var(--radius);box-shadow:var(--shadow2);padding:20px}
-    @media(max-width:1000px){.card{grid-column:span 6}}
-    @media(max-width:620px){.card{grid-column:span 12}}
-
-    .icon{
-      width:40px;height:40px;border-radius:12px;
-      background:#e9f4ff;color:var(--brand);
-      display:flex;align-items:center;justify-content:center;
-      font-weight:900;margin-bottom:10px;
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: #f7f9fc;
     }
 
-    /* Key areas pills */
-    .areasBox{
-      background:#fff;border-radius:var(--radius);box-shadow:var(--shadow2);
-      padding:22px;max-width:980px;margin:0 auto;text-align:center;
-    }
-    .areaPills{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:10px}
-    .areaPill{
-      background:#f0f7ff;border:1px solid #d6ebff;color:#143a7a;
-      padding:10px 12px;border-radius:999px;font-weight:900;font-size:14px;
-    }
-
-    /* Form */
-    .formCard{
-      background:#fff;border-radius:var(--radius);box-shadow:var(--shadow2);
-      padding:22px;max-width:920px;margin:0 auto;
-    }
-    input, textarea{
-      width:100%;padding:12px;border-radius:12px;border:1px solid #d8e2ee;margin-top:6px;font:inherit;
-    }
-    textarea{resize:vertical}
-    .submitBtn{
-      margin-top:16px;width:100%;padding:15px;border-radius:12px;border:0;
-      background:var(--accent);color:#fff;font-weight:900;cursor:pointer;
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 26px;
+      background: #0F2A44;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
     }
 
-    footer{background:#111;color:#aaa;text-align:center;padding:24px 12px;font-size:14px}
+    .btn:hover {
+      background: #C8A96A;
+      color: #0F2A44;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .section {
+      border-bottom: 1px solid #eee;
+    }
+
+    .cta {
+      text-align: center;
+      background: #f7f9fc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 32px; }
+      h2 { font-size: 24px; }
+    }
   </style>
 </head>
 
 <body>
 
-  <div class="topbar">
-    <div class="wrap">
-      Condos & Landlords • <strong>Servicing Metro Vancouver</strong>
-    </div>
-  </div>
-
-  <header>
-    <div class="wrap">
-      <div class="badge">Reliable • Affordable • Fast Response</div>
-      <h1>Condo Maintenance & Landlord Unit Turnover in Vancouver</h1>
-      <p class="sub">
-        Professional property services for condos and landlords including maintenance,
-        rental unit turnover, inspections, cleaning coordination, and vendor scheduling.
-      </p>
-
-      <a class="btn btnPrimary" href="#quote">Request a Quote</a>
-      <a class="btn btnGhost" href="#services">See Services</a>
-    </div>
-  </header>
-
-  <!-- Services -->
-  <section id="services">
-    <div class="wrap">
-      <h2 class="sectionTitle">Services</h2>
-
-      <div class="grid">
-        <div class="card"><div class="icon">1</div><h3>Condo Maintenance</h3><p>Minor repairs and ongoing support for condo units.</p></div>
-        <div class="card"><div class="icon">2</div><h3>Unit Turnover</h3><p>Move-out prep, cleaning coordination, and ready-to-rent presentation.</p></div>
-        <div class="card"><div class="icon">3</div><h3>Inspections</h3><p>Move-in / move-out documentation that protects landlords.</p></div>
-        <div class="card"><div class="icon">4</div><h3>Vendor Coordination</h3><p>Scheduling trades and keeping jobs moving smoothly.</p></div>
-      </div>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h1>Trusted House Sitting & Property Check-Ins in Vancouver</h1>
+      <p>Peace of mind while you’re away — backed by <strong>20+ years of real homeowner experience</strong> caring for properties.</p>
+      <a href="#quote" class="btn">Request a Check-In Quote</a>
+      <p style="margin-top:15px;">Serving Vancouver & the Lower Mainland</p>
     </div>
   </section>
 
-  <!-- Key Areas -->
-  <section>
-    <div class="wrap">
-      <h2 class="sectionTitle">Key Areas We Commonly Serve</h2>
-
-      <div class="areasBox">
-        <div class="areaPills">
-          <div class="areaPill">Downtown Vancouver</div>
-          <div class="areaPill">South Granville / Oak</div>
-          <div class="areaPill">Southeast Vancouver</div>
-        </div>
-      </div>
+  <!-- PROBLEM -->
+  <section class="section">
+    <div class="container">
+      <h2>Leaving your home empty shouldn’t feel stressful</h2>
+      <p>Travel, work, or extended time away can create real worry:</p>
+      <ul>
+        <li>Security concerns</li>
+        <li>Missed maintenance issues</li>
+        <li>Mail buildup</li>
+        <li>Water leaks or unexpected damage</li>
+        <li>No reliable local contact</li>
+      </ul>
+      <p><strong>Samco Property Services provides calm, reliable oversight so your home stays safe and cared for while you’re gone.</strong></p>
     </div>
   </section>
 
-  <!-- Quote -->
-  <section id="quote">
-    <div class="wrap">
-      <h2 class="sectionTitle">Request a Quote</h2>
-
-      <div class="formCard">
-        <form action="https://formspree.io/f/xbdarwoq" method="POST">
-
-          <label>Full name *<input name="name" required></label>
-          <label>Phone *<input name="phone" required></label>
-          <label>Email *<input type="email" name="email" required></label>
-          <label>Property address *<input name="address" required></label>
-          <label>Details *<textarea name="message" rows="5" required></textarea></label>
-
-          <input type="hidden" name="_subject" value="New Quote Request — Samco Property Services">
-          <input type="text" name="_gotcha" style="display:none">
-
-          <button class="submitBtn" type="submit">Send Request</button>
-        </form>
-      </div>
+  <!-- TRUST -->
+  <section class="section">
+    <div class="container">
+      <h2>20+ years of caring for homes</h2>
+      <p>For over two decades, I’ve personally managed and cared for my own properties while helping others protect theirs.</p>
+      <p>This isn’t casual house sitting — it’s <strong>real responsibility, long-term trust, and careful property care.</strong></p>
     </div>
   </section>
 
+  <!-- SERVICES -->
+  <section class="section">
+    <div class="container">
+      <h2>Simple, reliable home check-ins</h2>
+      <ul>
+        <li>Scheduled visits while you’re away</li>
+        <li>Mail collection & basic upkeep</li>
+        <li>Visual checks for leaks or concerns</li>
+        <li>Maintenance coordination if needed</li>
+        <li>Clear updates after each visit</li>
+      </ul>
+      <p><strong>Quiet. Careful. Respectful. Exactly how a home should be looked after.</strong></p>
+    </div>
+  </section>
+
+  <!-- RENTAL SUPPORT -->
+  <section class="section">
+    <div class="container">
+      <h2>Support for rental properties too</h2>
+      <p>If you later decide to rent your property, Samco also provides <strong>calm, full-service rental support</strong>.</p>
+      <p>No pressure — simply an option when the time is right.</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="quote">
+    <div class="container">
+      <h2>Get peace of mind while you’re away</h2>
+      <p>Request a simple quote or message anytime.</p>
+      <p><strong>📞 604-542-6880</strong><br/>
+         <strong>✉️ info@samcoservices.co</strong></p>
+      <a href="mailto:info@samcoservices.co" class="btn">Request a Quote</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
-    © 2026 Samco Property Services • Servicing Metro Vancouver
+    © 2026 Samco Property Services — Vancouver House Sitting & Property Check-Ins
   </footer>
 
 </body>
