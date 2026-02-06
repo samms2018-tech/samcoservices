@@ -7,10 +7,10 @@
 
   <!-- SEO -->
   <meta name="description" content="Trusted house sitting and property check-in services in Vancouver. 20+ years of real property care experience. Peace of mind while you're away."/>
-  <meta name="keywords" content="house sitting Vancouver, home check service Vancouver, vacant home check, property check Vancouver"/>
+  <meta name="keywords" content="house sitting Vancouver, home check service Vancouver, vacant home check Vancouver"/>
   <meta name="author" content="Samco Property Services"/>
 
-  <!-- Google Fonts -->
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
   <style>
@@ -22,33 +22,27 @@
       line-height: 1.6;
     }
 
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-
     h1, h2, h3 {
       font-family: 'Playfair Display', serif;
       margin-bottom: 15px;
     }
 
-    h1 { font-size: 42px; }
-    h2 { font-size: 28px; }
-    h3 { font-size: 22px; }
-
-    p { margin-bottom: 15px; }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 60px 20px;
+    }
 
     .hero {
-      text-align: center;
-      padding: 80px 20px;
       background: #f7f9fc;
+      text-align: center;
+      padding: 100px 20px;
     }
 
     .btn {
       display: inline-block;
       margin-top: 20px;
-      padding: 14px 26px;
+      padding: 14px 28px;
       background: #0F2A44;
       color: #fff;
       text-decoration: none;
@@ -61,109 +55,163 @@
       color: #0F2A44;
     }
 
-    ul {
-      padding-left: 20px;
+    ul { padding-left: 20px; }
+
+    .section { border-bottom: 1px solid #eee; }
+
+    .pricing-box {
+      border: 1px solid #eee;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      background: #fafbfe;
     }
 
-    .section {
-      border-bottom: 1px solid #eee;
-    }
+    .form-group { margin-bottom: 15px; }
 
-    .cta {
-      text-align: center;
-      background: #f7f9fc;
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
     }
 
     footer {
       text-align: center;
-      padding: 30px 20px;
+      padding: 30px;
       font-size: 14px;
-      color: #666;
-    }
-
-    @media (max-width: 600px) {
-      h1 { font-size: 32px; }
-      h2 { font-size: 24px; }
+      color: #777;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container">
-      <h1>Trusted House Sitting & Property Check-Ins in Vancouver</h1>
-      <p>Peace of mind while you’re away — backed by <strong>20+ years of real homeowner experience</strong> caring for properties.</p>
-      <a href="#quote" class="btn">Request a Check-In Quote</a>
-      <p style="margin-top:15px;">Serving Vancouver & the Lower Mainland</p>
-    </div>
-  </section>
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h1>Trusted House Sitting & Property Check-Ins in Vancouver</h1>
+    <p>Peace of mind while you’re away — backed by <strong>20+ years of real homeowner experience</strong> caring for properties.</p>
+    <a href="#quote" class="btn">Request a Check-In Quote</a>
+    <p>Serving Vancouver & the Lower Mainland</p>
+  </div>
+</section>
 
-  <!-- PROBLEM -->
-  <section class="section">
-    <div class="container">
-      <h2>Leaving your home empty shouldn’t feel stressful</h2>
-      <p>Travel, work, or extended time away can create real worry:</p>
-      <ul>
-        <li>Security concerns</li>
-        <li>Missed maintenance issues</li>
-        <li>Mail buildup</li>
-        <li>Water leaks or unexpected damage</li>
-        <li>No reliable local contact</li>
-      </ul>
-      <p><strong>Samco Property Services provides calm, reliable oversight so your home stays safe and cared for while you’re gone.</strong></p>
-    </div>
-  </section>
+<!-- PROBLEM -->
+<section class="section">
+  <div class="container">
+    <h2>Leaving your home empty shouldn’t feel stressful</h2>
+    <ul>
+      <li>Security concerns</li>
+      <li>Missed maintenance issues</li>
+      <li>Mail buildup</li>
+      <li>Water leaks or unexpected damage</li>
+      <li>No reliable local contact</li>
+    </ul>
+    <p><strong>Samco Property Services keeps your home safe, checked, and cared for while you’re away.</strong></p>
+  </div>
+</section>
 
-  <!-- TRUST -->
-  <section class="section">
-    <div class="container">
-      <h2>20+ years of caring for homes</h2>
-      <p>For over two decades, I’ve personally managed and cared for my own properties while helping others protect theirs.</p>
-      <p>This isn’t casual house sitting — it’s <strong>real responsibility, long-term trust, and careful property care.</strong></p>
-    </div>
-  </section>
+<!-- TRUST -->
+<section class="section">
+  <div class="container">
+    <h2>20+ years of caring for homes</h2>
+    <p>I’ve personally managed and cared for properties for over two decades, helping homeowners protect what matters most.</p>
+  </div>
+</section>
 
-  <!-- SERVICES -->
-  <section class="section">
-    <div class="container">
-      <h2>Simple, reliable home check-ins</h2>
-      <ul>
-        <li>Scheduled visits while you’re away</li>
-        <li>Mail collection & basic upkeep</li>
-        <li>Visual checks for leaks or concerns</li>
-        <li>Maintenance coordination if needed</li>
-        <li>Clear updates after each visit</li>
-      </ul>
-      <p><strong>Quiet. Careful. Respectful. Exactly how a home should be looked after.</strong></p>
-    </div>
-  </section>
+<!-- SERVICES -->
+<section class="section">
+  <div class="container">
+    <h2>Simple, reliable home check-in services</h2>
+    <ul>
+      <li>Scheduled home visits</li>
+      <li>Mail collection & basic upkeep</li>
+      <li>Visual checks for leaks or concerns</li>
+      <li>Maintenance coordination if needed</li>
+      <li>Clear updates after each visit</li>
+    </ul>
+  </div>
+</section>
 
-  <!-- RENTAL SUPPORT -->
-  <section class="section">
-    <div class="container">
-      <h2>Support for rental properties too</h2>
-      <p>If you later decide to rent your property, Samco also provides <strong>calm, full-service rental support</strong>.</p>
-      <p>No pressure — simply an option when the time is right.</p>
-    </div>
-  </section>
+<!-- PRICING -->
+<section class="section">
+  <div class="container">
+    <h2>Simple Vancouver Pricing</h2>
 
-  <!-- CTA -->
-  <section class="cta" id="quote">
-    <div class="container">
-      <h2>Get peace of mind while you’re away</h2>
-      <p>Request a simple quote or message anytime.</p>
-      <p><strong>📞 604-542-6880</strong><br/>
-         <strong>✉️ info@samcoservices.co</strong></p>
-      <a href="mailto:info@samcoservices.co" class="btn">Request a Quote</a>
+    <div class="pricing-box">
+      <h3>Occasional Check-In</h3>
+      <p><strong>$25–$40 per visit</strong></p>
+      <p>Best for short trips and quick peace of mind.</p>
     </div>
-  </section>
 
-  <!-- FOOTER -->
-  <footer>
-    © 2026 Samco Property Services — Vancouver House Sitting & Property Check-Ins
-  </footer>
+    <div class="pricing-box">
+      <h3>Regular Care</h3>
+      <p><strong>$120–$250 per week</strong></p>
+      <p>Ideal for extended travel or seasonal absence.</p>
+    </div>
+
+    <div class="pricing-box">
+      <h3>Full Peace-of-Mind Coverage</h3>
+      <p><strong>Custom monthly quote</strong></p>
+      <p>For long-term travel or higher-value homes.</p>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE FORM -->
+<section id="quote">
+  <div class="container">
+    <h2>Request a Simple Check-In Quote</h2>
+    <p>I personally reply within 24 hours.</p>
+
+    <form action="mailto:info@samcoservices.co" method="post" enctype="text/plain">
+      <div class="form-group">
+        <input type="text" name="Location" placeholder="Property location" required>
+      </div>
+
+      <div class="form-group">
+        <select name="Time Away" required>
+          <option value="">Length of time away</option>
+          <option>A few days</option>
+          <option>1–2 weeks</option>
+          <option>2–8 weeks</option>
+          <option>Several months</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <select name="Frequency" required>
+          <option value="">Check-in frequency</option>
+          <option>One-time visit</option>
+          <option>Weekly</option>
+          <option>Multiple per week</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <input type="text" name="Name" placeholder="Your name" required>
+      </div>
+
+      <div class="form-group">
+        <input type="email" name="Email" placeholder="Email address" required>
+      </div>
+
+      <div class="form-group">
+        <textarea name="Notes" placeholder="Anything you'd like me to know"></textarea>
+      </div>
+
+      <button class="btn" type="submit">Get My Quote</button>
+    </form>
+
+    <p><strong>📞 604-542-6880</strong></p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Samco Property Services — Vancouver House Sitting & Property Check-Ins
+</footer>
 
 </body>
 </html>
