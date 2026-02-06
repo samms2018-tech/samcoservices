@@ -1,21 +1,520 @@
-body{
-  margin:0;
-  font-family:'Open Sans',sans-serif;
-  color:#0F2A44;
-  background:#fff;
-  line-height:1.55;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Samco Property Services | House Sitting Vancouver</title>
 
-.container{
-  max-width: 980px;
-  margin:auto;
-  padding: 36px 18px; /* tighter */
-}
+  <!-- SEO -->
+  <meta name="description" content="Trusted house sitting and property check-in services in Vancouver. 20+ years of real property care experience. Peace of mind while you're away."/>
+  <meta name="keywords" content="house sitting Vancouver, home check service Vancouver, vacant home check Vancouver, property check Vancouver"/>
+  <meta name="author" content="Samco Property Services"/>
 
-.hero{
-  background:#f7f9fc;
-  text-align:center;
-  padding: 64px 18px; /* tighter */
-}
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --navy:#0F2A44;
+      --gold:#C8A96A;
+      --bg:#ffffff;
+      --soft:#f7f9fc;
+      --line: rgba(15,42,68,0.10);
+      --shadow: 0 14px 40px rgba(15,42,68,0.08);
+      --radius: 14px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body{
+      margin:0;
+      font-family:'Open Sans',sans-serif;
+      color:var(--navy);
+      background:var(--bg);
+      line-height:1.55;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    a{ color:inherit; }
+
+    .wrap{
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 18px;
+    }
+
+    /* Top bar */
+    .topbar{
+      background: var(--navy);
+      color: #fff;
+      font-size: 14px;
+    }
+    .topbar .wrap{
+      padding: 10px 18px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+    .topbar strong{ letter-spacing: 0.02em; }
+    .topbar .mini{
+      opacity: 0.95;
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+    }
+
+    /* Sticky nav */
+    .nav{
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav .wrap{
+      padding: 10px 18px;
+      display:flex;
+      justify-content: space-between;
+      align-items:center;
+      gap: 10px;
+    }
+    .brand{
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+    .links{
+      display:flex;
+      gap: 10px;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+    }
+    .links a{
+      text-decoration:none;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 8px 10px;
+      border-radius: 10px;
+      border: 1px solid transparent;
+    }
+    .links a:hover{
+      border-color: rgba(15,42,68,0.14);
+      background: rgba(15,42,68,0.04);
+    }
+
+    /* Sections */
+    section{
+      border-bottom: 1px solid rgba(15,42,68,0.08);
+    }
+    .pad{
+      padding: 34px 0;
+    }
+
+    /* Hero */
+    .hero{
+      background: radial-gradient(1200px 500px at 50% -80px, rgba(200,169,106,0.20), transparent 55%),
+                  linear-gradient(180deg, var(--soft), #fff);
+    }
+    .hero .pad{
+      padding: 52px 0 40px;
+    }
+    h1,h2,h3{
+      font-family:'Playfair Display',serif;
+      margin: 0 0 10px 0;
+      letter-spacing: -0.02em;
+    }
+    h1{ font-size: 40px; line-height: 1.12; }
+    h2{ font-size: 26px; line-height: 1.2; }
+    h3{ font-size: 20px; line-height: 1.25; }
+    p{ margin: 0 0 12px 0; }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 18px;
+      align-items: start;
+    }
+
+    .card{
+      background:#fff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 18px;
+    }
+
+    .badge{
+      display:inline-block;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      background: rgba(15,42,68,0.04);
+      border: 1px solid rgba(15,42,68,0.10);
+      padding: 6px 10px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap: 10px;
+      padding: 12px 18px;
+      background: var(--navy);
+      color:#fff;
+      border-radius: 12px;
+      text-decoration:none;
+      font-weight: 800;
+      border: 1px solid rgba(15,42,68,0.20);
+      box-shadow: 0 12px 30px rgba(15,42,68,0.16);
+    }
+    .btn:hover{
+      background: var(--gold);
+      color: var(--navy);
+      border-color: rgba(200,169,106,0.55);
+    }
+    .btn.secondary{
+      background: #fff;
+      color: var(--navy);
+      box-shadow: none;
+      border: 1px solid rgba(15,42,68,0.18);
+    }
+    .btn.secondary:hover{
+      background: rgba(15,42,68,0.04);
+      border-color: rgba(15,42,68,0.26);
+      color: var(--navy);
+    }
+
+    .subline{
+      color: rgba(15,42,68,0.78);
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    /* Lists */
+    ul{
+      margin: 10px 0 0;
+      padding-left: 18px;
+    }
+    li{ margin: 6px 0; }
+
+    /* Pricing grid */
+    .pricing{
+      display:grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 12px;
+    }
+    .price{
+      border: 1px solid rgba(15,42,68,0.10);
+      border-radius: var(--radius);
+      padding: 16px;
+      background: #fff;
+      box-shadow: 0 12px 34px rgba(15,42,68,0.06);
+    }
+    .price .amt{
+      font-size: 18px;
+      font-weight: 900;
+      margin: 6px 0 10px;
+    }
+    .muted{
+      color: rgba(15,42,68,0.72);
+      font-size: 14px;
+    }
+
+    /* Form */
+    form{
+      margin-top: 10px;
+    }
+    .grid2{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .field{
+      display:flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    label{
+      font-size: 13px;
+      font-weight: 800;
+      color: rgba(15,42,68,0.85);
+    }
+    input, select, textarea{
+      width:100%;
+      padding: 11px 12px;
+      border: 1px solid rgba(15,42,68,0.18);
+      border-radius: 12px;
+      font-size: 14px;
+      background:#fff;
+      outline: none;
+    }
+    input:focus, select:focus, textarea:focus{
+      border-color: rgba(200,169,106,0.90);
+      box-shadow: 0 0 0 4px rgba(200,169,106,0.22);
+    }
+    textarea{
+      min-height: 110px;
+      resize: vertical;
+    }
+
+    .actions{
+      display:flex;
+      gap: 10px;
+      flex-wrap:wrap;
+      margin-top: 12px;
+      align-items:center;
+    }
+    .fineprint{
+      font-size: 12px;
+      color: rgba(15,42,68,0.70);
+      margin-top: 10px;
+    }
+
+    footer{
+      border-top: 1px solid rgba(15,42,68,0.08);
+      padding: 18px 0;
+      font-size: 13px;
+      color: rgba(15,42,68,0.68);
+    }
+
+    /* Responsive */
+    @media (max-width: 860px){
+      .hero-grid{ grid-template-columns: 1fr; }
+      .pricing{ grid-template-columns: 1fr; }
+      .grid2{ grid-template-columns: 1fr; }
+      h1{ font-size: 34px; }
+      h2{ font-size: 24px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="wrap">
+      <strong>Samco Property Services</strong>
+      <div class="mini">
+        <span>📍 Vancouver & Lower Mainland</span>
+        <span>📞 604-542-6880</span>
+        <span>✉️ info@samcoservices.co</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky nav -->
+  <div class="nav">
+    <div class="wrap">
+      <div class="brand">Samco</div>
+      <div class="links">
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#quote">Request a Quote</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap pad">
+      <div class="hero-grid">
+        <div>
+          <span class="badge">House Sitting • Home Check-Ins</span>
+          <h1>Trusted House Sitting & Property Check-Ins in Vancouver</h1>
+          <p class="muted">Peace of mind while you’re away — backed by <strong>20+ years</strong> of real homeowner experience caring for properties.</p>
+
+          <div class="actions">
+            <a class="btn" href="#quote">Request a Quote</a>
+            <a class="btn secondary" href="tel:6045426880">Call 604-542-6880</a>
+          </div>
+
+          <p class="subline"><strong>Quiet, reliable, respectful care</strong> — so your home stays safe and looked after.</p>
+        </div>
+
+        <div class="card">
+          <h3 style="margin-bottom:8px;">At-a-glance</h3>
+          <ul>
+            <li>Scheduled check-ins while you’re away</li>
+            <li>Mail collection & basic upkeep</li>
+            <li>Visual checks for leaks or concerns</li>
+            <li>Maintenance coordination if needed</li>
+            <li>Clear updates after visits</li>
+          </ul>
+          <p class="fineprint">Not sure what you need? Choose “Not sure yet” in the form — I’ll recommend the simplest plan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem / Trust -->
+  <section>
+    <div class="wrap pad">
+      <h2>Leaving your home empty shouldn’t feel stressful</h2>
+      <p class="muted">Travel, work, or extended time away can create real worry — security, missed maintenance, mail buildup, or a small issue turning into a costly one.</p>
+      <p><strong>Samco Property Services keeps your home safe, checked, and cared for while you’re away.</strong></p>
+
+      <div style="height:10px"></div>
+
+      <h2>20+ years of caring for homes</h2>
+      <p class="muted">I’ve managed and cared for properties for over two decades — my own and others — with a focus on calm oversight, respect, and clear communication.</p>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="wrap pad">
+      <h2>Services</h2>
+      <p class="muted">Simple, reliable property check-ins tailored to your situation.</p>
+
+      <div class="pricing" style="margin-top:14px;">
+        <div class="price">
+          <h3>Regular Check-Ins</h3>
+          <p class="muted">Scheduled visits to keep eyes on the home and catch issues early.</p>
+        </div>
+        <div class="price">
+          <h3>Mail + Basic Upkeep</h3>
+          <p class="muted">Mail collection and light upkeep to reduce visible vacancy.</p>
+        </div>
+        <div class="price">
+          <h3>Issue Monitoring</h3>
+          <p class="muted">Visual checks for leaks, alarms, damage, or concerns.</p>
+        </div>
+        <div class="price">
+          <h3>Maintenance Coordination</h3>
+          <p class="muted">If something needs attention, I can coordinate trusted help.</p>
+        </div>
+        <div class="price">
+          <h3>Clear Updates</h3>
+          <p class="muted">Simple updates after visits so you’re never guessing.</p>
+        </div>
+        <div class="price">
+          <h3>Longer Absences</h3>
+          <p class="muted">More frequent oversight for vacant or high-value homes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing">
+    <div class="wrap pad">
+      <h2>Pricing</h2>
+      <p class="muted">Transparent ranges — final pricing depends on location, visit frequency, and length of time away.</p>
+
+      <div class="pricing">
+        <div class="price">
+          <h3>Occasional Check-In</h3>
+          <div class="amt">$25–$40 <span class="muted">/ visit</span></div>
+          <p class="muted">Best for short trips and quick peace of mind.</p>
+        </div>
+
+        <div class="price">
+          <h3>Regular Care</h3>
+          <div class="amt">$120–$250 <span class="muted">/ week</span></div>
+          <p class="muted">Ideal for extended travel or seasonal absence.</p>
+        </div>
+
+        <div class="price">
+          <h3>Full Peace-of-Mind</h3>
+          <div class="amt">Custom <span class="muted">monthly</span></div>
+          <p class="muted">For long-term travel or higher-value properties.</p>
+        </div>
+      </div>
+
+      <p class="fineprint">Want the simplest quote? Use the form below — I’ll reply with a clear plan and price.</p>
+    </div>
+  </section>
+
+  <!-- Quote -->
+  <section id="quote">
+    <div class="wrap pad">
+      <h2>Request a Check-In Quote</h2>
+      <p class="muted">Quick, easy, and no pressure. I personally reply within 24 hours.</p>
+
+      <!-- NOTE: mailto forms can be flaky on some devices.
+           This keeps it simple for now. If you want a rock-solid form, tell me and I’ll wire it to Formspree (free). -->
+      <div class="card" style="box-shadow: var(--shadow);">
+        <form action="mailto:info@samcoservices.co" method="post" enctype="text/plain">
+          <div class="grid2">
+            <div class="field">
+              <label for="location">Property location</label>
+              <input id="location" name="Location" type="text" placeholder="e.g., Downtown Vancouver / Burnaby" required />
+            </div>
+
+            <div class="field">
+              <label for="timeaway">Length of time away</label>
+              <select id="timeaway" name="Time Away" required>
+                <option value="">Select one…</option>
+                <option>A few days</option>
+                <option>1–2 weeks</option>
+                <option>2–8 weeks</option>
+                <option>Several months</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="freq">Preferred visit frequency</label>
+              <select id="freq" name="Frequency" required>
+                <option value="">Select one…</option>
+                <option>One-time visit</option>
+                <option>Weekly</option>
+                <option>Multiple times per week</option>
+                <option>Not sure — please advise</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="name">Your name</label>
+              <input id="name" name="Name" type="text" placeholder="Your name" required />
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="Email" type="email" placeholder="you@example.com" required />
+            </div>
+
+            <div class="field">
+              <label for="phone">Phone (optional)</label>
+              <input id="phone" name="Phone" type="tel" placeholder="(optional) best number to reach you" />
+            </div>
+          </div>
+
+          <div class="field" style="margin-top:12px;">
+            <label for="notes">Optional notes</label>
+            <textarea id="notes" name="Notes" placeholder="Anything you’d like me to know (pets, access notes, specific concerns, etc.)"></textarea>
+          </div>
+
+          <div class="actions">
+            <button class="btn" type="submit">Get My Quote</button>
+            <a class="btn secondary" href="tel:6045426880">Or Call 604-542-6880</a>
+          </div>
+
+          <div class="fineprint">
+            Phone is only used for your quote or urgent questions — no spam.
+          </div>
+        </form>
+      </div>
+
+      <div style="height:12px"></div>
+
+      <p class="muted"><strong>Direct contact:</strong> 604-542-6880 • info@samcoservices.co</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="wrap">
+      © 2026 Samco Property Services — Vancouver House Sitting & Property Check-Ins
+    </div>
+  </footer>
+
+</body>
+</html>
