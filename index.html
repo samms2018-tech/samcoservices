@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Samco Property Services | House Sitting Vancouver</title>
+  <title>Samco Property Services | Home Watch & Property Check-Ins Vancouver</title>
 
   <!-- SEO -->
-  <meta name="description" content="Trusted house sitting and property check-in services in Vancouver. 20+ years of real property care experience. Peace of mind while you're away."/>
-  <meta name="keywords" content="house sitting Vancouver, home check service Vancouver, vacant home check Vancouver, property check Vancouver"/>
+  <meta name="description" content="Relax while you’re away — insurance-friendly home check-ins, photo reports, and trusted local care in Vancouver & the Lower Mainland. No contracts."/>
+  <meta name="keywords" content="home watch Vancouver, property check-ins Vancouver, vacant home checks Vancouver, house sitting Vancouver, home check service Vancouver"/>
   <meta name="author" content="Samco Property Services"/>
 
   <!-- Fonts -->
@@ -17,7 +17,7 @@
     :root{
       --navy:#0F2A44;
       --gold:#C8A96A;
-      --bg:#eef1f4;        /* grey-ish background */
+      --bg:#eef1f4;        /* soft grey background */
       --card:#ffffff;      /* white cards */
       --muted: rgba(15,42,68,0.72);
       --line: rgba(15,42,68,0.10);
@@ -38,13 +38,13 @@
       -moz-osx-font-smoothing: grayscale;
     }
 
-    a{ color:inherit; }
-
     .wrap{
-      max-width: 1020px;
+      max-width: 1040px;
       margin: 0 auto;
       padding: 0 20px;
     }
+
+    a{ color: inherit; }
 
     /* Top bar */
     .topbar{
@@ -66,7 +66,7 @@
       position: sticky;
       top:0;
       z-index: 50;
-      background: rgba(255,255,255,0.90);
+      background: rgba(255,255,255,0.92);
       backdrop-filter: blur(10px);
       border-bottom: 1px solid var(--line);
     }
@@ -108,7 +108,7 @@
       margin: 0 0 12px 0;
       letter-spacing: -0.02em;
     }
-    h1{ font-size: 42px; line-height: 1.12; }
+    h1{ font-size: 44px; line-height: 1.1; }
     h2{ font-size: 28px; line-height: 1.18; }
     h3{ font-size: 20px; line-height: 1.25; }
     p{ margin: 0 0 12px 0; }
@@ -121,11 +121,12 @@
         radial-gradient(1200px 520px at 50% -120px, rgba(200,169,106,0.22), transparent 55%),
         linear-gradient(180deg, #f7f9fc, var(--bg));
       border-bottom: 1px solid var(--line);
-      padding: 54px 0 40px;
+      padding: 56px 0 44px;
     }
+
     .hero-grid{
       display:grid;
-      grid-template-columns: 1.2fr 0.8fr;
+      grid-template-columns: 1.15fr 0.85fr;
       gap: 18px;
       align-items:start;
     }
@@ -192,7 +193,7 @@
     ul{ margin: 10px 0 0; padding-left: 18px; }
     li{ margin: 6px 0; }
 
-    /* Feature grid */
+    /* Grids */
     .grid{
       display:grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -208,13 +209,26 @@
       box-shadow: 0 12px 34px rgba(15,42,68,0.06);
     }
 
-    .price{
-      font-size: 18px;
+    .checklist{
+      margin-top: 10px;
+      padding-left: 0;
+      list-style: none;
+    }
+    .checklist li{
+      margin: 8px 0;
+      padding-left: 26px;
+      position: relative;
+    }
+    .checklist li:before{
+      content: "✔";
+      position:absolute;
+      left:0;
+      top:0;
+      color: var(--gold);
       font-weight: 900;
-      margin: 6px 0 10px;
     }
 
-    /* Form */
+    /* Quote form */
     label{
       display:block;
       font-size: 13px;
@@ -276,145 +290,164 @@
     <div class="wrap">
       <div class="brand">Samco</div>
       <div class="links">
+        <a href="#what">What We Do</a>
         <a href="#services">Services</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#quote">Request a Quote</a>
+        <a href="#why">Why Samco</a>
+        <a href="#area">Service Area</a>
+        <a href="#quote">Get a Quote</a>
       </div>
     </div>
   </div>
 
-  <!-- Hero -->
+  <!-- HERO -->
   <div class="hero">
     <div class="wrap">
       <div class="hero-grid">
         <div>
-          <span class="badge">House Sitting • Home Check-Ins</span>
-          <h1>Trusted House Sitting & Property Check-Ins in Vancouver</h1>
+          <span class="badge">Home Watch • Property Check-Ins</span>
+          <h1>Relax while you’re away — we keep watch on your Vancouver home.</h1>
           <p class="muted">
-            Peace of mind while you’re away — backed by <strong>20+ years</strong> of real homeowner experience caring for properties.
+            Insurance-friendly home check-ins, photo reports, and trusted local care.
+            <strong>No contracts.</strong> Just real peace of mind.
           </p>
 
           <div class="actions">
-            <a class="btn" href="#quote">Request a Quote</a>
+            <a class="btn" href="#quote">Get a Quick Quote</a>
             <a class="btn secondary" href="tel:6045426880">Call 604-542-6880</a>
           </div>
 
-          <p class="fineprint">
-            Calm, discreet, and reliable care — so your home stays safe and looked after.
-          </p>
+          <p class="fineprint">Discreet visits • Clear photo updates • Fast communication</p>
         </div>
 
         <div class="card">
-          <h3 style="margin-bottom:8px;">At-a-glance</h3>
-          <ul>
-            <li>Scheduled check-ins while you’re away</li>
-            <li>Mail collection & basic upkeep</li>
-            <li>Visual checks for leaks or concerns</li>
-            <li>Maintenance coordination if needed</li>
-            <li>Clear updates after visits</li>
+          <h3 style="margin-bottom:8px;">What you get</h3>
+          <ul class="checklist">
+            <li>Insurance-friendly vacancy check-ins</li>
+            <li>Photo reports after every visit</li>
+            <li>Leak, damage, and safety checks</li>
+            <li>Mail collection (if requested)</li>
+            <li>Urgent issue coordination</li>
           </ul>
-          <p class="fineprint">Not sure what you need? Choose “Not sure yet” in the quote form.</p>
+          <p class="fineprint">Not sure what plan you need? Choose “Not sure yet” in the quote form.</p>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Trust / Problem -->
-  <section>
+  <!-- WHAT WE DO -->
+  <section id="what">
     <div class="wrap">
-      <h2>Leaving your home empty shouldn’t feel stressful</h2>
+      <h2>What We Do</h2>
       <p class="muted">
-        Travel, work, or extended time away can bring real concerns — security, missed maintenance, mail buildup, or a small issue turning into a costly one.
+        When your home sits empty, small problems can become expensive fast.
+        Samco Property Services provides reliable home watch and property check-ins so you can travel, work abroad,
+        or manage property remotely without worry.
       </p>
-      <p><strong>Samco Property Services keeps your home safe, checked, and cared for while you’re away.</strong></p>
-
-      <div style="height:10px;"></div>
-
-      <h2>20+ years of caring for homes</h2>
       <p class="muted">
-        I’ve managed and cared for properties for over two decades — my own and others — with a focus on calm oversight, respect, and clear communication.
+        We carefully inspect your home, collect mail, look for leaks or damage, and send clear photo updates after every visit.
       </p>
+      <p><strong>Simple. Discreet. Trusted.</strong></p>
     </div>
   </section>
 
-  <!-- Services -->
+  <!-- SERVICES -->
   <section id="services">
     <div class="wrap">
       <h2>Services</h2>
-      <p class="muted">Simple, reliable property check-ins tailored to your situation.</p>
 
       <div class="grid">
         <div class="mini-card">
-          <h3>Regular Check-Ins</h3>
-          <p class="muted">Scheduled visits to keep eyes on the home and catch issues early.</p>
+          <h3>Essential Check-In</h3>
+          <p class="muted">Perfect for short trips or occasional monitoring.</p>
+          <ul class="checklist">
+            <li>Full visual inspection</li>
+            <li>Leak & damage check</li>
+            <li>Mail collection</li>
+            <li>Photo report after visit</li>
+          </ul>
         </div>
+
         <div class="mini-card">
-          <h3>Mail + Basic Upkeep</h3>
-          <p class="muted">Mail collection and light upkeep to reduce visible vacancy.</p>
+          <h3>Weekly Home Watch</h3>
+          <p class="muted">Reliable ongoing protection while you’re away.</p>
+          <ul class="checklist">
+            <li>Multiple visits per week</li>
+            <li>Detailed updates</li>
+            <li>Urgent issue coordination</li>
+          </ul>
         </div>
+
         <div class="mini-card">
-          <h3>Issue Monitoring</h3>
-          <p class="muted">Visual checks for leaks, alarms, damage, or concerns.</p>
-        </div>
-        <div class="mini-card">
-          <h3>Maintenance Coordination</h3>
-          <p class="muted">If something needs attention, I can coordinate trusted help.</p>
-        </div>
-        <div class="mini-card">
-          <h3>Clear Updates</h3>
-          <p class="muted">Simple updates after visits so you’re never guessing.</p>
-        </div>
-        <div class="mini-card">
-          <h3>Longer Absences</h3>
-          <p class="muted">More frequent oversight for vacant or higher-value homes.</p>
+          <h3>Monthly Peace-of-Mind Plan</h3>
+          <p class="muted">Best for extended travel or seasonal absence.</p>
+          <ul class="checklist">
+            <li>Scheduled inspections</li>
+            <li>Priority response if issues arise</li>
+            <li>Maintenance coordination when needed</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Pricing -->
-  <section id="pricing">
+  <!-- WHY SAMCO -->
+  <section id="why">
     <div class="wrap">
-      <h2>Pricing</h2>
-      <p class="muted">Transparent ranges — final pricing depends on location, visit frequency, and length of time away.</p>
+      <h2>Why Homeowners Choose Samco</h2>
 
       <div class="grid">
         <div class="mini-card">
-          <h3>Occasional Check-In</h3>
-          <div class="price">$25–$40 <span class="muted">/ visit</span></div>
-          <p class="muted">Best for short trips and quick peace of mind.</p>
+          <h3>Local Vancouver service</h3>
+          <p class="muted">Trusted local care from someone who understands the market and the risks of vacancy.</p>
         </div>
-
         <div class="mini-card">
-          <h3>Regular Care</h3>
-          <div class="price">$120–$250 <span class="muted">/ week</span></div>
-          <p class="muted">Ideal for extended travel or seasonal absence.</p>
+          <h3>Photo updates every visit</h3>
+          <p class="muted">Clear, simple photo reports so you always know your home is safe.</p>
         </div>
-
         <div class="mini-card">
-          <h3>Full Peace-of-Mind</h3>
-          <div class="price">Custom <span class="muted">monthly</span></div>
-          <p class="muted">For long-term travel or higher-value properties.</p>
+          <h3>No long-term contracts</h3>
+          <p class="muted">No lock-ins. Just reliable service when you need it.</p>
+        </div>
+        <div class="mini-card">
+          <h3>Insurance-friendly checks</h3>
+          <p class="muted">Vacancy check-ins designed to align with typical insurance requirements.</p>
+        </div>
+        <div class="mini-card">
+          <h3>Fast communication</h3>
+          <p class="muted">Quick responses and clear next steps.</p>
+        </div>
+        <div class="mini-card">
+          <h3>Respectful & discreet</h3>
+          <p class="muted">Your home is treated with the same care as if you never left.</p>
         </div>
       </div>
 
-      <p class="fineprint">Want the simplest quote? Use the form below — I’ll reply with a clear plan and price.</p>
+      <p class="fineprint">Your home is treated with the same care as if you never left.</p>
     </div>
   </section>
 
-  <!-- Quote (Formspree) -->
+  <!-- SERVICE AREA -->
+  <section id="area">
+    <div class="wrap">
+      <h2>Service Area</h2>
+      <p class="muted"><strong>Proudly serving Vancouver and the Lower Mainland.</strong></p>
+      <p class="muted">Vancouver • Burnaby • Richmond • North/West Vancouver • New Westminster • Coquitlam (and nearby)</p>
+    </div>
+  </section>
+
+  <!-- CTA + QUOTE (FORMSPREE) -->
   <section id="quote">
     <div class="wrap">
-      <h2>Request a Check-In Quote</h2>
-      <p class="muted">Quick, easy, and no pressure. I personally reply within 24 hours.</p>
+      <h2>Travel with confidence.</h2>
+      <p class="muted">Request a quick quote today and know your home is in safe hands.</p>
 
-      <div class="card" style="max-width:680px;margin: 0 auto;">
+      <div class="card" style="max-width:720px;margin: 18px auto 0;">
         <form id="quoteForm" action="https://formspree.io/f/xbdarwoq" method="POST">
           <input type="hidden" name="_subject" value="New Quote Request — Samco Property Services">
           <input type="hidden" name="_captcha" value="false">
 
           <label>Property location</label>
-          <input type="text" name="Location" placeholder="e.g., Vancouver, Burnaby, Surrey" required>
+          <input type="text" name="Location" placeholder="e.g., Downtown Vancouver / Burnaby / Surrey" required>
 
           <label>Length of time away</label>
           <select name="Time Away" required>
@@ -426,13 +459,13 @@
             <option>Not sure yet</option>
           </select>
 
-          <label>Preferred check-in frequency</label>
-          <select name="Frequency" required>
+          <label>Which plan are you interested in?</label>
+          <select name="Plan Interest" required>
             <option value="">Select one…</option>
-            <option>One-time visit</option>
-            <option>Weekly</option>
-            <option>Multiple times per week</option>
-            <option>Not sure — need advice</option>
+            <option>Essential Check-In</option>
+            <option>Weekly Home Watch</option>
+            <option>Monthly Peace-of-Mind Plan</option>
+            <option>Not sure — advise me</option>
           </select>
 
           <label>Your name</label>
@@ -445,10 +478,11 @@
           <input type="tel" name="Phone">
 
           <label>Optional notes</label>
-          <textarea name="Notes" placeholder="Pets, alarms, access notes, specific concerns, etc."></textarea>
+          <textarea name="Notes" placeholder="Pets, alarms, access notes, specific concerns, insurance requirements, etc."></textarea>
 
-          <button class="btn" type="submit" style="width:100%;margin-top:6px;">Get My Quote</button>
-          <div class="fineprint" style="text-align:center;margin-top:10px;">
+          <button class="btn" type="submit" style="width:100%;margin-top:6px;">Request Your Quote</button>
+
+          <div class="fineprint" style="text-align:center;">
             No spam. Your info is used only to provide your quote.
           </div>
         </form>
@@ -459,24 +493,28 @@
           <p><strong>📞 604-542-6880</strong></p>
         </div>
       </div>
+
+      <p class="fineprint" style="text-align:center;margin-top:14px;">
+        Prefer to call instead? <strong><a href="tel:6045426880">604-542-6880</a></strong>
+      </p>
     </div>
   </section>
 
   <footer>
     <div class="wrap">
-      © 2026 Samco Property Services — Vancouver House Sitting & Property Check-Ins
+      © 2026 Samco Property Services — Home Watch & Property Check-Ins • Vancouver & Lower Mainland
     </div>
   </footer>
 
-  <!-- AJAX submit (keeps user on page + shows success message) -->
+  <!-- AJAX submit: stays on page + shows success message -->
   <script>
     const form = document.getElementById("quoteForm");
     const success = document.getElementById("formSuccess");
 
     form.addEventListener("submit", async function(e) {
       e.preventDefault();
-
       const data = new FormData(form);
+
       const response = await fetch(form.action, {
         method: "POST",
         body: data,
